@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.main {
+  background-color: rgb(49, 49, 49);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // color: pink;
+  font-family: montserrat;
+}
+
+div, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.mode-dark {
+  background-color: white;
+}

@@ -1,0 +1,29 @@
+<div (click)="toggleMode()" class="mode">
+  <img *ngIf="mode === 'light'" class="sun" src="assets/images/sun.png" />
+  <img *ngIf="mode === 'dark'" class="moon" src="assets/images/moon.png" />
+</div>
+
+<div class="header">
+  <p class="name">Allison Schambers</p>
+  <ul class="nav">
+    <li class="nav-link">Home</li>
+    <li class="nav-link">About</li>
+    <li class="nav-link">Projects</li>
+  </ul>
+</div>
+
+<div class="project">
+  <div class="project-left">
+    <img class="project-img" src="assets/images/replayvisualizer.png" />
+  </div>
+  <div class="project-right">
+    <p [ngClass]="getClassName('project-title')">About Project</p>
+    <ul class="project-details">
+      <li [ngClass]="getClassName('project-details')">This project was built using Angular and deployed to gh pages.
+      It takes html files from a folder you select, and parses the data
+      so that you can see who won, and other interesting things about the
+      battles such as what were common pokemon used in those games.
+      </li>
+    </ul>
+  </div>
+</div>
