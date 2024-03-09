@@ -6,6 +6,7 @@
 }
 
 .header {
+  // height: 5rem;
   padding-bottom: 0.2rem;
   background-color: pink;
 }
@@ -69,7 +70,7 @@
   padding: 0.2rem;
 }
 
-.project-one, .project-two {
+.about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,36 +78,54 @@
   margin-right: auto;
   padding: 1.5rem;
   color: white;
-  &-img {
-    height: 45rem;
-    border: 1px solid white;
-    cursor: pointer;
-    border-radius: 1px;
-    width: 100%;
-  }
-  &-img:hover {
-    transform: scale(1.005) perspective(0px);
-    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.8);
+  margin: 2rem 10% 1rem 10%;
+
+  &-hobbies {
+    margin-top: 1rem;
   }
 
-  &-desc {
-    margin-top: 0.5rem;
-    text-align: center;
-    padding: 1rem 10% 0rem 10%;
+  &-container {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1rem;
   }
+}
 
-  &-links {
-    padding-top: 0.5rem;
-    font-size: 1.2em;
-    &-url {
-      margin-right: 1rem;
-      text-decoration: none;
-    }
-    &-code {
-      margin-right: 1rem;
-      text-decoration: none;
-    }
+.github {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  color: white;
+  margin: 2rem 10% 1rem 10%;
+
+  &-container {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1rem;
   }
+}
+
+.border-dark {
+  border: 1px solid #FFFFFF;
+  padding: 1.5rem;
+}
+
+.border-light {
+  border: 1px solid #000000;
+  padding: 1.5rem;
+}
+
+.border-dark:hover {
+  transform: scale(1.005) perspective(0px);
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.8);
+}
+
+.border-light:hover {
+  transform: scale(1.005) perspective(0px);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
 
 .text {
@@ -116,4 +135,20 @@
   &-dark {
     color: #FFFFFF;
   }
+}
+
+.icons-container {
+  margin-top: 1rem;
+}
+
+.icon {
+  height: 5rem;
+  width: 5rem;
+  padding: 0.5rem;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(50, 50, 250);
+  font-size: 1.4rem;
 }

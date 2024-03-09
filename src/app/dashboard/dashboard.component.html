@@ -6,24 +6,28 @@
 <div class="header">
   <p class="name">Allison Schambers</p>
   <ul class="nav">
-    <li class="nav-link">Home</li>
-    <li class="nav-link">About</li>
-    <li class="nav-link">Projects</li>
+    <li class="nav-link" [routerLink]="'/'">Projects</li>
+    <li class="nav-link" [routerLink]="'/about'">About</li>
   </ul>
 </div>
 
-<div class="project">
-  <div class="project-left">
-    <img class="project-img" src="assets/images/replayvisualizer.png" />
+<div class="project-one">
+  <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-img" src="assets/images/zygarden.png" />
+  <div class="project-one-desc">
+    <p [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'">An Angular application that makes it easy to create and join Pokemon GO PVP tournaments. (private while in development)</p>
+    <div class="project-one-links">
+      <a class="project-one-links-url" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://acc.zygarden.gg/">url</a>
+      <a class="project-one-links-code" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://github.com/Zygarden/zygarden-frontend">code</a>
+    </div>
   </div>
-  <div class="project-right">
-    <p [ngClass]="getClassName('project-title')">About Project</p>
-    <ul class="project-details">
-      <li [ngClass]="getClassName('project-details')">This project was built using Angular and deployed to gh pages.
-      It takes html files from a folder you select, and parses the data
-      so that you can see who won, and other interesting things about the
-      battles such as what were common pokemon used in those games.
-      </li>
-    </ul>
+</div>
+<div class="project-two">
+  <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-two-img" src="assets/images/replayvisualizer.png" />
+  <div class="project-two-desc">
+    <p [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'">An Angular application that parses battle replays to show trends and statistics.</p>
+    <div class="project-one-links">
+      <a class="project-one-links-url" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://aschambers.github.io/replay-visualizer/">url</a>
+      <a class="project-one-links-code" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://github.com/aschambers/replay-visualizer">code</a>
+    </div>
   </div>
 </div>
