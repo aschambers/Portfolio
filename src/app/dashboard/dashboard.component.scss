@@ -24,6 +24,7 @@
   text-align: center;
   justify-content: center;
   cursor: pointer;
+  padding-top: 0.5rem;
   &-link {
     margin: 0rem 1rem 0rem 1rem;
     font-size: 1em;
@@ -109,11 +110,35 @@
   }
 }
 
+.project-one-mobile {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  color: white;
+  &-img {
+    height: 45rem;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 1px;
+    width: 49%;
+    margin-left: 0.3rem;
+  }
+}
+
 .text {
   &-light {
     color: #000000;
   }
   &-dark {
     color: #FFFFFF;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-one-mobile {
+    &-img {
+      width: 100%;
+    }
   }
 }

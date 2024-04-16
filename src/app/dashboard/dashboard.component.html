@@ -12,7 +12,15 @@
 </div>
 
 <div class="project-one">
-  <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-img" src="assets/images/zygarden.png" />
+  <div *ngIf="!isMobileScreenshots" (click)="showMobileScreenshots()">
+    <img id="project-one-img" [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-img" src="assets/images/Zygarden.png" />
+  </div>
+  <div *ngIf="isMobileScreenshots" (click)="showMobileScreenshots()">
+    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/HomePageMobile.png" />
+    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/DashboardMobile.png" />
+    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/ManageTournamentMobile.png" />
+    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/TournamentsPageMobile.png" />
+  </div>
   <div class="project-one-desc">
     <p [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'">An Angular application that makes it easy to create and join Pokemon GO PVP tournaments. (private while in development)</p>
     <div class="project-one-links">
@@ -22,7 +30,9 @@
   </div>
 </div>
 <div class="project-two">
-  <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-two-img" src="assets/images/replayvisualizer.png" />
+  <div (click)="navigateToWebsite()">
+    <img id="project-two-img" [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-two-img" src="assets/images/ReplayVisualizer.png" />
+  </div>
   <div class="project-two-desc">
     <p [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'">An Angular application that parses battle replays to show trends and statistics.</p>
     <div class="project-one-links">
