@@ -31,13 +31,25 @@
 </div>
 <div class="project-two">
   <div (click)="navigateToWebsite()">
-    <img id="project-two-img" [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-two-img" src="assets/images/ReplayVisualizer.png" />
+    <img id="project-two-img" [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-two-img" src="assets/images/SleepVisualizer.png" />
   </div>
   <div class="project-two-desc">
+    <p [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'">An Angular application will allow you to calculate the strength a recipe will give Snorlax in Pokemon Sleep and other info about game mechanics.</p>
+    <div class="project-two-links">
+      <a class="project-two-links-url" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://aschambers.github.io/sleep-visualizer/">url</a>
+      <a class="project-two-links-code" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://github.com/aschambers/sleep-visualizer">code</a>
+    </div>
+  </div>
+</div>
+<div class="project-three">
+  <div (click)="navigateToWebsite()">
+    <img id="project-three-img" [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-three-img" src="assets/images/ReplayVisualizer.png" />
+  </div>
+  <div class="project-three-desc">
     <p [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'">An Angular application that parses battle replays to show trends and statistics.</p>
-    <div class="project-one-links">
-      <a class="project-one-links-url" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://aschambers.github.io/replay-visualizer/">url</a>
-      <a class="project-one-links-code" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://github.com/aschambers/replay-visualizer">code</a>
+    <div class="project-three-links">
+      <a class="project-three-links-url" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://aschambers.github.io/replay-visualizer/">url</a>
+      <a class="project-three-links-code" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://github.com/aschambers/replay-visualizer">code</a>
     </div>
   </div>
 </div>
