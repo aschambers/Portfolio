@@ -6,20 +6,20 @@
 <div class="header">
   <p class="name">Allison Schambers</p>
   <ul class="nav">
-    <li class="nav-link" [routerLink]="'/'">Projects</li>
-    <li class="nav-link" [routerLink]="'/about'">About</li>
+    <li class="nav-link" [routerLink]="'/'">About</li>
+    <li class="nav-link" [routerLink]="'/projects'">Projects</li>
   </ul>
 </div>
 
 <div class="project-one">
   <div *ngIf="!isMobileScreenshots" (click)="showMobileScreenshots()">
-    <img id="project-one-img" [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-img" src="assets/images/Zygarden.png" />
+    <img id="project-one-img" [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-img" src="assets/images/zygarden.png" />
   </div>
   <div *ngIf="isMobileScreenshots" (click)="showMobileScreenshots()">
-    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/HomePageMobile.png" />
-    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/DashboardMobile.png" />
-    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/ManageTournamentMobile.png" />
-    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/TournamentsPageMobile.png" />
+    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/homepagemobile.png" />
+    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/dashboardmobile.png" />
+    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/managetournamentmobile.png" />
+    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/tournamentspagemobile.png" />
   </div>
   <div class="project-one-desc">
     <p [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'">An Angular application that makes it easy to create and join Pokemon GO PVP tournaments. (private while in development)</p>
@@ -30,8 +30,8 @@
   </div>
 </div>
 <div class="project-two">
-  <div (click)="navigateToWebsite()">
-    <img id="project-two-img" [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-two-img" src="assets/images/SleepVisualizer.png" />
+  <div (click)="navigateToWebsite(true)">
+    <img id="project-two-img" [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-two-img" src="assets/images/sleepvisualizer.png" />
   </div>
   <div class="project-two-desc">
     <p [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'">An Angular application will allow you to calculate the strength a recipe will give Snorlax in Pokemon Sleep and other info about game mechanics.</p>
@@ -42,8 +42,8 @@
   </div>
 </div>
 <div class="project-three">
-  <div (click)="navigateToWebsite()">
-    <img id="project-three-img" [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-three-img" src="assets/images/ReplayVisualizer.png" />
+  <div (click)="navigateToWebsite(false)">
+    <img id="project-three-img" [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-three-img" src="assets/images/replayvisualizer.png" />
   </div>
   <div class="project-three-desc">
     <p [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'">An Angular application that parses battle replays to show trends and statistics.</p>

@@ -19,7 +19,7 @@
 .nav {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   list-style-type: none;
   text-align: center;
   justify-content: center;
@@ -87,8 +87,8 @@
     width: 100%;
   }
   &-img:hover {
-    transform: scale(1.005) perspective(0px);
-    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease;
+    transform: scale(0.985) perspective(0px);
   }
 
   &-desc {
@@ -111,21 +111,6 @@
   }
 }
 
-.project-one-mobile {
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5rem;
-  color: white;
-  &-img {
-    height: 45rem;
-    border: 1px solid white;
-    cursor: pointer;
-    border-radius: 1px;
-    width: 49%;
-    margin-left: 0.3rem;
-  }
-}
 
 .text {
   &-light {

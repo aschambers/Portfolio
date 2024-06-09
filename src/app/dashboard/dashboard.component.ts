@@ -63,7 +63,7 @@ export class DashboardComponent implements OnInit {
     this.isMobileScreenshots = !this.isMobileScreenshots;
   }
 
-  navigateToWebsite() {
-    this.document.location.href = 'https://aschambers.github.io/replay-visualizer';
+  navigateToWebsite(isSleepVisualizer: boolean) {
+    this.document.location.href = `https://aschambers.github.io/${isSleepVisualizer ? 'sleep-visualizer' : 'replay-visualizer'}`;
   }
 }

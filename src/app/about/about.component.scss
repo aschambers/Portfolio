@@ -19,7 +19,7 @@
 .nav {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   list-style-type: none;
   text-align: center;
   justify-content: center;
@@ -119,13 +119,15 @@
 }
 
 .border-dark:hover {
-  transform: scale(1.005) perspective(0px);
-  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(0.985) perspective(0px);
 }
 
 .border-light:hover {
-  transform: scale(1.005) perspective(0px);
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(0.985) perspective(0px);
 }
 
 .text {
@@ -139,6 +141,10 @@
 
 .icons-container {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .icon {
