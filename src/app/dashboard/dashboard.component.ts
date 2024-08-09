@@ -34,6 +34,7 @@ export class DashboardComponent implements OnInit {
   handleWindowResize() {
     this.windowResizeService.handleWindowResize('project-one-img');
     this.windowResizeService.handleWindowResize('project-two-img');
+    this.windowResizeService.handleWindowResize('project-three-img');
   }
 
   toggleMode() {
