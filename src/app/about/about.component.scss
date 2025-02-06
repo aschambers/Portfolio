@@ -118,16 +118,8 @@
   padding: 1.5rem;
 }
 
-.border-dark:hover {
+.about-container, .github-container {
   cursor: pointer;
-  transition: all 0.3s ease;
-  transform: scale(0.985) perspective(0px);
-}
-
-.border-light:hover {
-  cursor: pointer;
-  transition: all 0.3s ease;
-  transform: scale(0.985) perspective(0px);
 }
 
 .text {
@@ -155,6 +147,12 @@
 
 .link {
   text-decoration: none;
-  color: rgb(50, 50, 250);
+  color: rgb(253, 253, 253);
+  font-size: 1.4rem;
+}
+
+.link-light {
+  text-decoration: none;
+  color: rgb(32, 32, 32);
   font-size: 1.4rem;
 }

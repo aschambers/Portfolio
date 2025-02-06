@@ -12,19 +12,13 @@
 </div>
 
 <div class="project-one">
-  <div *ngIf="!isMobileScreenshots" (click)="showMobileScreenshots()">
+  <a href="https://zygarden.gg/">
     <img id="project-one-img" [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-img" src="assets/images/zygarden.png" />
-  </div>
-  <div *ngIf="isMobileScreenshots" (click)="showMobileScreenshots()">
-    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/homepagemobile.png" />
-    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/dashboardmobile.png" />
-    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/managetournamentmobile.png" />
-    <img [ngClass]="mode === 'light' ? 'border-dark' : 'border-light'" class="project-one-mobile-img" src="assets/images/tournamentspagemobile.png" />
-  </div>
+  </a>
   <div class="project-one-desc">
-    <p [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'">An Angular application that makes it easy to create and join Pokemon GO PVP tournaments. (private while in development)</p>
+    <p [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'">An Angular application that makes it easy to create and join Pokemon GO PVP tournaments. (not open source yet)</p>
     <div class="project-one-links">
-      <a class="project-one-links-url" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://acc.zygarden.gg/">url</a>
+      <a class="project-one-links-url" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://zygarden.gg/">url</a>
       <a class="project-one-links-code" [ngClass]="mode === 'light' ? 'text-dark' : 'text-light'" href="https://github.com/Zygarden/zygarden-frontend">code</a>
     </div>
   </div>

@@ -86,10 +86,6 @@
     border-radius: 1px;
     width: 100%;
   }
-  &-img:hover {
-    transition: all 0.5s ease;
-    transform: scale(0.985) perspective(0px);
-  }
 
   &-desc {
     margin-top: 0.5rem;
